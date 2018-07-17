@@ -14,9 +14,9 @@ def main_func():
     #-------------------------------------
     # Define Email Header
     #-------------------------------------
-    fromaddr = "w.glaeser@lse.ac.uk"
-    #toaddr = "nick.delaforge@xain.io,emil.birk@ymail.com,ben_glaeser@hotmail.de"
-    toaddr = 'ben_glaeser@hotmail.de'
+    fromaddr = "w.glaeser@xxxxxxx"
+    #toaddr = "xxx,xxx,xxx"
+    toaddr = 'xxx'
     msg = MIMEMultipart()
     msg['From'] = fromaddr
     msg['To'] = toaddr
@@ -36,19 +36,11 @@ def main_func():
     #-------------------------------------
     # Email Body
     #-------------------------------------
-    if new_flats == 0:
-        body = "Moin ihr lutscher,\n\n" \
-      "In den letzten 8 Stunden ist keine neue Wohnung auf den Markt gekommen.\n\n" \
-      "FUCKFUCKFUCK\n\n" \
-      "Die komplette Liste mit aktuellen Wohnugngen ist trotzdem angehaengt.\n\n" \
-      "Ciao Boys"
-        msg['Subject'] = "Im Osten nichts Neues"
-    else:
-        body = "Moin ihr lutscher,\n\n" \
+    body = "Moin ihr lutscher,\n\n" \
            "Es gibt wundervolle Neuigkeiten! Es ist/sind " \
            "{} neue Wohnungen erschienen! Checks aus.\n\n"\
            "See you later".format(new_flats)
-        msg['Subject'] = "Es gihihibt neue Wohnungen"
+    msg['Subject'] = "Es gihihibt neue Wohnungen"
 
     #-------------------------------------
     # Email Attachment
