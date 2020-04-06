@@ -36,7 +36,7 @@ def main_func():
     #-------------------------------------
     # Email Body
     #-------------------------------------
-    body = "Moin ihr lutscher,\n\n" \
+    body = "Moin\n\n" \
            "Es gibt wundervolle Neuigkeiten! Es ist/sind " \
            "{} neue Wohnungen erschienen! Checks aus.\n\n"\
            "See you later".format(new_flats)
